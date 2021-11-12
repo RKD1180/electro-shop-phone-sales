@@ -6,6 +6,7 @@ import PostReview from "./../PostReview/PostReview";
 import MakeAdmin from "./../MakeAdmin/MakeAdmin";
 import Pay from "./../Pay/Pay";
 import ManageAllOrders from "./../ManageAllOrders/ManageAllOrders";
+import AddNewProduct from "./../AddNewProduct/AddNewProduct";
 
 const Dashboard = () => {
   const { logOut, admin } = useAuth();
@@ -33,6 +34,15 @@ const Dashboard = () => {
               >
                 <button className="btn btn-outline-dark w-75">
                   All Orders
+                </button>
+              </Link>
+              <Link
+                to={`${url}/addnewproduct`}
+                className="nav-link active fw-bold text-dark"
+                aria-current="page"
+              >
+                <button className="btn btn-outline-dark w-75">
+                  Add New Product
                 </button>
               </Link>
             </div>
@@ -89,6 +99,9 @@ const Dashboard = () => {
             </Route>
             <Route exact path={`${path}/manageAllOrders`}>
               <ManageAllOrders></ManageAllOrders>
+            </Route>
+            <Route exact path={`${path}/addnewproduct`}>
+              <AddNewProduct></AddNewProduct>
             </Route>
           </Switch>
         </div>
