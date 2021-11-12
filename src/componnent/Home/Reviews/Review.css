@@ -1,0 +1,14 @@
+.carousel-control-btn-left {
+    background-color: black;
+    height: 49px;
+    width: 49px;
+    border-radius: 50%;
+    margin-top: 54px;
+}
+.carousel-control-btn-right {
+    background-color: black;
+    height: 49px;
+    width: 49px;
+    border-radius: 50%;
+    margin-top: 54px;
+}
